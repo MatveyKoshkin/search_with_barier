@@ -1,0 +1,13 @@
+#include "header.h"
+int main()
+{
+	int target = 20;
+	int a[] = { 1, 2, 4, 7, 9, 14, 15,};
+	int lenght = sizeof(a) / sizeof(int);
+	int t = search_with_barier(a, lenght, target);
+	printf("position %d\n", t);
+	t = search_with_barier2(a, lenght, target);
+	printf("position %d\n", t);
+	system("pause");
+	return 0;
+}
