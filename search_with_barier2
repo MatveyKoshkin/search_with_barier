@@ -1,0 +1,7 @@
+int search_with_barier2(int* values, int lenght, int target)
+{
+	values[lenght] = target;
+	int i = 0;
+	while (values[i] != target) { i++; }
+	return i < lenght ? i : -1;
+}
